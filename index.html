@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="bg-sky-100 flex justify-center items-center h-screen">
+    <div class="bg-white max-w-xl space-y-3 p-6 rounded-2xl">
+      <h1 class="text-3xl font-bold">Contact Us</h1>
+      <div class="flex space-x-3">
+        <div class="w-full">
+          <p>First Name *</p>
+          <input type="text" class="border-2 p-2 w-full rounded-lg input1" />
+          <p class="text-red-600 hidden error1">This field is requried</p>
+        </div>
+        <div class="w-full">
+          <p>Last Name *</p>
+          <input type="text" class="border-2 p-2 w-full rounded-lg input2" />
+          <p class="text-red-600 hidden error2">This field is requried</p>
+        </div>
+      </div>
+      <div>
+        <p>Email Address *</p>
+        <input type="text" name="email" class="border-2 p-2 w-full rounded-lg input3" />
+        <p class="text-red-600 hidden error3">
+          please enter a valid email address
+        </p>
+      </div>
+      <p>Query Type *</p>
+      <div class="flex space-x-3">
+        <div class="max-w-xs flex border-2 p-2 rounded-lg w-full space-x-2">
+          <label for="id">
+            <input
+              type="radio"
+              value="classx"
+              name="class"
+              class="p-2 border-2 input4"
+            />
+          </label>
+          <p>General Enguiry</p>
+        </div>
+
+        <div class="flex border-2 p-2 rounded-lg w-full space-x-2">
+          <label for="id">
+            <input
+              type="radio"
+              value="classx"
+              name="class"
+              class="p-2 border-2 input5"
+            />
+          </label>
+          <p>Support Request</p>
+        </div>
+      </div>
+      <p class="text-red-600 hidden error4">please select a query type</p>
+      <div>
+        <p>Message *</p>
+        <input type="text" class="border-2 p-7 w-full rounded-lg input6" />
+      </div>
+      <p class="text-red-600 hidden error5">This field is requried</p>
+      <div class="flex space-x-3">
+        <input type="checkbox" class="border-2 input7" />
+        <p>I consent to being contacted by the team *</p>
+      </div>
+      <p class="text-red-600 hidden error6">
+        To submit this form please.consent to being contacted
+      </p>
+
+      <button class="w-full bg-green-800 p-3 rounded-lg text-white button">
+        Submit
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
